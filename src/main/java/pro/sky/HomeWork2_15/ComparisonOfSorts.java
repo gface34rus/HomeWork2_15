@@ -9,7 +9,7 @@ public class ComparisonOfSorts {
         arr[indexB] = tmp;
     }
 
-    public static void sortBubble(int[] arr) {
+    public static void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -54,7 +54,7 @@ public class ComparisonOfSorts {
             array1[i] = random.nextInt();
         }
         long start1 = System.currentTimeMillis();
-        sortBubble(array1);
+        bubbleSort(array1);
         System.out.println(System.currentTimeMillis() - start1);
 
         for (int i = 0; i < 100_000; i++) {
